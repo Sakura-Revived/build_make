@@ -1076,9 +1076,15 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   # the update of the system partition takes the remaining progress.
   system_progress = 0.9 - (len(block_diff_dict) - 1) * 0.1
 
-  script.Print("======Project Sakura======");
-  script.Print("==A customised LineageOS==");
-
+  script.Print("============================================================");
+  script.Print("   ___             _         __  ____     __                ");
+  script.Print("  / _ \_______    (_)__ ____/ /_/ __/__ _/ /____ _________ _");
+  script.Print(" / ___/ __/ _ \  / / -_) __/ __/\ \/ _ `/  '_/ // / __/ _ `/");
+  script.Print("/_/  /_/  \___/_/ /\__/\__/\__/___/\_,_/_/\_\\_,_/_/  \_,_/ ");
+  script.Print("             |___/                                          ");
+  script.Print("============================================================");
+  script.Print("               By: @ChaitanayaMittal && @LordShenron        ");
+  script.Print("============================================================");
   androidver = target_info.GetBuildProp("ro.build.version.release")
   buildidn = target_info.GetBuildProp("ro.build.id")
   buildday = target_info.GetBuildProp("ro.build.date")
@@ -1086,7 +1092,6 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   device = target_info.GetBuildProp("ro.product.name")
   manufacturer = target_info.GetBuildProp("ro.product.manufacturer")
   script.Print("***********************************************");
-  script.Print(" ROM version      : %s"%(buildid));
   script.Print(" Android version  : %s"%(androidver));
   script.Print(" Security patch   : %s"%(securep));
   script.Print(" Build date       : %s"%(buildday));
